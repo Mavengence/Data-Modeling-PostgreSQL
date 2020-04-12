@@ -9,22 +9,25 @@ def create_database():
     """
     
     # connect to default database
-    conn = psycopg2.connect("host=127.0.0.1 dbname=studentdb user=student password=student")
-    conn.set_session(autocommit=True)
-    cur = conn.cursor()
-    
-    # create sparkify database with UTF8 encoding
-    cur.execute("DROP DATABASE IF EXISTS sparkifydb")
-    cur.execute("CREATE DATABASE sparkifydb WITH ENCODING 'utf8' TEMPLATE template0")
+    try:
+        conn = psycopg2.connect("host=127.0.0.1 dbname=studentdb user=student password=student")
+        conn.set_session(autocommit=True)
+        cur = conn.cursor()
 
-    # close connection to default database
-    conn.close()    
-    
+        # create sparkify database with UTF8 encoding
+        cur.execute("DROP DATABASE IF EXISTS sparkifydb")
+        cur.execute("CREATE DATABASE sparkifydb WITH ENCODING 'utf8' TEMPLATE template0")
+
+        # close connection to default database
+        conn.close()   
+        
+    except:
     # connect to sparkify database
-    conn = psycopg2.connect("host=127.0.0.1 dbname=sparkifydb user=student password=student")
-    cur = conn.cursor()
-    
-    return cur, conn
+        print("No default database found. Create sparkifydb...")
+        conn = psycopg2.connect("host=127.0.0.1 dbname=sparkifydb user=student password=student")
+        cur = conn.cursor()
+
+        return cur, conn
 
 
 def drop_tables(cur, conn):
@@ -62,6 +65,7 @@ def main():
     
     drop_tables(cur, conn)
     create_tables(cur, conn)
+    print("Success")
 
     conn.close()
 
