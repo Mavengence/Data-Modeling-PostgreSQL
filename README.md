@@ -1,6 +1,11 @@
+ <div style="border-bottom:none;">
+<div align="center">
 <h1>Sparkify<h1>
-<h3>Udacity Data Engineering Nanodegree</h3>
+<h3>Udacity Data Engineer Nanodegree</h3>
 <img src="Udacity_logo.png" width="400" height="170">˘
+<hr>
+</div>
+</div>
 
 # Data Modeling Project
 
