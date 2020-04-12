@@ -1,9 +1,0 @@
-name: datascience_projects
-channels:
-  - defaults
-dependencies:
-  - pip:
-    pandas==1.0.1
-    psycopg2_binary==2.8.5
-    psycopg2==2.8.5
-prefix: /Users/timloehr/anaconda3/envs/datascience_projects
