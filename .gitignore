@@ -1,0 +1,6 @@
+.ipynb_checkpoints
+Cheatsheets
+__pycache__
+.DS_Store
+data/.DS_Store
+modeling/.DS_Store

@@ -9,7 +9,12 @@
 
 # Data Modeling Project
 
-This is my solution for the *Data Modeling with Postgres* Project from the [Data Engineering Nanodegree at Udacity ](https://eu.udacity.com/course/data-engineer-nanodegree--nd027). The goal is to create a star schema optimized for queries on song play analysis.
+This is my solution for the *Data Modeling with Postgres* Project from the [Data Engineering Nanodegree at Udacity ](https://eu.udacity.com/course/data-engineer-nanodegree--nd027). The goal is to create a star schema optimized for queries on song play analysis. Two datasets are used for this project listed in the following:
+
+```
+  - [Million Song Dataset](http://millionsongdataset.com/)
+  - [Logs made by Eventsim](https://github.com/Interana/eventsim)
+```
 
 ## Getting Started
 
