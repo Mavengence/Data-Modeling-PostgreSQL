@@ -87,10 +87,11 @@ A startup called Sparkify wants to analyze the data they've been collecting on s
 ## Database Schema
 
 The database is a Star Schema with one fact table (songplays) and four dimension tables (time, users, songs and artists).
+<div align="center">
 
 ![Database schema](star_schema.jpg)
 
-
+</div>
 
 
 ## Author
