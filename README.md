@@ -11,10 +11,8 @@
 
 This is my solution for the *Data Modeling with Postgres* Project from the [Data Engineering Nanodegree at Udacity ](https://eu.udacity.com/course/data-engineer-nanodegree--nd027). The goal is to create a star schema optimized for queries on song play analysis. Two datasets are used for this project listed in the following:
 
-```
-  - [Million Song Dataset](http://millionsongdataset.com/)
-  - [Logs made by Eventsim](https://github.com/Interana/eventsim)
-```
+- [Million Song Dataset](http://millionsongdataset.com/)
+- [Logs made by Eventsim](https://github.com/Interana/eventsim)
 
 ## Getting Started
 
@@ -89,10 +87,11 @@ A startup called Sparkify wants to analyze the data they've been collecting on s
 ## Database Schema
 
 The database is a Star Schema with one fact table (songplays) and four dimension tables (time, users, songs and artists).
+<div align="center">
 
 ![Database schema](star_schema.jpg)
 
-
+</div>
 
 
 ## Author
